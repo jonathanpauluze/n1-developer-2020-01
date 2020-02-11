@@ -24,12 +24,25 @@
   align-items: center;
 }
 
-.menu-hamburger {
+.navbar-brand {
+  display: flex;;
+}
+
+.navbar-brand .menu-hamburger {
   border: none;
   background-color: transparent;
   outline: none;
   cursor: pointer;
   padding: 5px;
+}
+
+.menu-hamburger .hamburger-icon {
+  width: 25px;
+}
+
+.logo {
+  width: 50px;
+  margin-left: 20px;
 }
 
 .navbar-nav {
