@@ -1,12 +1,9 @@
 .featured-games-container {
-  position: absolute;
-  bottom: -170px;
-  left: 50%;
-  transform: translateX(-50%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
   width: 75%;
+  margin: -20px auto 0 auto;
 }
 
 .featured-game__card {
@@ -14,7 +11,7 @@
 }
 
 .featured-game__cover {
-  max-width: 100%;
+  width: 100%;
 }
 
 .featured-game__btn {
@@ -44,7 +41,6 @@
 /* ==== MOBILE ==== */
 @media only screen and (max-width: 850px) {
   .featured-games-container {
-    bottom: -280px;
     grid-template-columns: 1fr;
     column-gap: 0;
     row-gap: 20px;
