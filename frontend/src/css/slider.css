@@ -61,8 +61,8 @@
   color: #fff;
 }
 
-.slick-next,
-.slick-prev {
+.slider-controller__next,
+.slider-controller__prev {
   position: absolute;
   bottom: 130px;
   right: 10px;
@@ -72,7 +72,7 @@
   z-index: 5;
 }
 
-.slick-prev {
+.slider-controller__prev {
   right: 40px;
 }
 
@@ -166,13 +166,13 @@
     color: #fff;
   }
 
-  .slick-next,
-  .slick-prev {
+  .slider-controller__next,
+  .slider-controller__prev {
     bottom: -15px;
     right: 20px;
   }
 
-  .slick-prev {
+  .slider-controller__prev {
     right: 60px;
   }
 
