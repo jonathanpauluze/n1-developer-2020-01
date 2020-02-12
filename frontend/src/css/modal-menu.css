@@ -1,0 +1,133 @@
+.modal-menu {
+  position: absolute;
+  top: 65px;
+  left: -15px;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'genre1 genre2 genre3';
+  width: 500px;
+  height: 250px;
+  padding-top: 40px;
+  border: 2px solid #3EC6E0;
+  background-color: #084154;
+  box-shadow: 8px 8px 0 #3EC6E0;
+  transition: ease-in-out;
+}
+
+.modal-menu.active {
+  display: grid;
+  animation: show-up .3s forwards;
+}
+
+.modal-menu::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #3EC6E0;
+  border-left: 10px solid transparent;
+}
+
+.modal-menu .genre-fight {
+  grid-area: 'genre1';
+}
+
+.modal-menu .genre-adventure {
+  grid-area: 'genre2';
+}
+
+.modal-menu .genre-car {
+  grid-area: 'genre3';
+}
+
+.modal__genre-container {
+  justify-self: center;
+  color: #fff;
+}
+
+.modal__genre-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.modal__game-list {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.modal__game-item {
+  margin-top: 15px;
+}
+
+.modal__game-title {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+.modal__game-title:hover {
+  text-decoration: underline;
+}
+
+/* ==== MOBILE ==== */
+@media only screen and (max-width: 850px) {
+
+  .modal-menu.active {
+    top: 0;
+    left: -1px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40px;
+    border: none;
+    box-shadow: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: -1;
+  }
+
+  .modal-menu::before {
+    display: none;
+  }
+
+  .modal__genre-container {
+    display: block;
+    width: 100%;
+    justify-self: start;
+    align-self: end;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .modal__genre-container:first-child {
+    margin-top: 60px;
+  }
+
+  .modal__genre-container:not(:last-child)::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    background-color: #003344;
+  }
+
+  .modal__genre-title {
+    padding-left: 25px;
+  }
+  
+  .modal__game-item {
+    padding: 8px 0 8px 25px;
+    margin-top: 0;
+  }
+
+  .modal__game-item:hover {
+    background-color: #3EC6E0;
+  }
+
+}
