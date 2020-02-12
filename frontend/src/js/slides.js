@@ -26,8 +26,8 @@ export default function startSlides() {
   // Start Slick
   $(document).ready(function(){
     $('.slider').slick({
-      prevArrow: '<button type="button" class="slick-prev"><img src="./src/svgs/angle-left-solid.svg"/></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="./src/svgs/angle-right-solid.svg"/></button>'
+      prevArrow: '<button type="button" class="slider-controller__prev"><img src="./src/svgs/angle-left-solid.svg"/></button>',
+      nextArrow: '<button type="button" class="slider-controller__next"><img src="./src/svgs/angle-right-solid.svg"/></button>'
     });
 
     $('.slider').on('beforeChange', () => {

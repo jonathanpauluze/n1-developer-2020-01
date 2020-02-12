@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="./src/css/main.css">
-  <title>Os melhores games com os melhores preços | Agência N1</title>
+  <title>Sua loja geek com os melhores preços | Agência N1</title>
 </head>
 <body>
   <header class="header">
@@ -88,7 +88,7 @@
         <li class="nav-item">
           <a class="nav-link" href="">
             <img class="nav-icon" src="./src/svgs/shopping-bag-solid.svg" alt="ícone sacola">
-            <span class="bag-items">0</span>
+            <span class="bag-amount">0</span>
           </a>
         </li>
       </ul>
@@ -110,10 +110,37 @@
       <p class="game-description">Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.</p>
     </div>
   </div>
+
+  <section class="featured-games-container">
+    <div class="featured-game__card">
+      <img class="featured-game__cover" src="./src/img/zelda_banner.jpg" alt="The Legend of Zelda Breath of the Wild" />
+      <button class="featured-game__btn"></button>
+    </div>
+    <div class="featured-game__card">
+      <img class="featured-game__cover" src="./src/img/sekiro_banner.jpg" alt="Sekiro: Shadows Die Twice" />
+      <button class="featured-game__btn"></button>
+    </div>
+  </section>
+
+  <section class="featured-products-container">
+    <header class="featured-products__title">Produtos em destaque</header>
+    <div class="featured-products__slider">
+      
+    </div>
+  </section>
+
+  <div class="lightbox-container">
+    <div class="lightbox">
+      <button class="lightbox__close">x</button>
+      <p class="lightbox__emoji">✌</p>
+      <p class="lightbox__text">Obrigado por comprar!</p>
+    </div>
+  </div>
   
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script type="module" src="./src/js/index.js"></script>
 </body>
 </html>
