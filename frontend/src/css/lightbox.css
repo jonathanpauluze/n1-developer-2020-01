@@ -26,6 +26,7 @@
   height: 400px;
   padding: 0 20px;
   background-color: #fff;
+  animation: show-up .3s forwards;
 }
 
 .lightbox__close {
