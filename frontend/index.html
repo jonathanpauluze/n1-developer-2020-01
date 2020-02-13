@@ -74,7 +74,7 @@
 
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link nav-contact" href="">
             <img class="nav-icon paper-plane" src="./src/svgs/paper-plane.svg" alt="ícone contato">
             <span class="nav-text">Contato</span>
           </a>
@@ -96,14 +96,20 @@
   </header>
 
   <div class="contact-container">
-    <form class="contact">
+    <div class="contact">
       <button class="contact__close">x</button>
-      <header class="contact__title">✍ Fale com a gente</header>
-      <input class="contact__name-input" type="text" placeholder="Seu nome *" required />
-      <input class="contact__email-input" type="email" placeholder="Seu e-mail *" required />
-      <textarea class="contact__message" name="message" placeholder="Sua mensagem *"  cols="30" rows="10" required></textarea>
-      <button class="contact__btn">Enviar!</button>
-    </form>
+      <form class="contact__form">
+        <header class="contact__title">✍ Fale com a gente</header>
+        <input class="contact__name-input" type="text" placeholder="Seu nome *" required />
+        <input class="contact__email-input" type="email" placeholder="Seu e-mail *" required />
+        <textarea class="contact__message" name="message" placeholder="Sua mensagem *"  cols="30" rows="10" required></textarea>
+        <button class="contact__btn">Enviar!</button>
+      </form>
+      <div class="contact__success">
+        <header class="contact__success-title">✅</header>
+        <p class="contact__success-message">Tudo certo! Em breve retornaremos o contato.</p>
+      </div>
+    </div>
   </div>
 
   <div class="slider-container">
