@@ -9,8 +9,8 @@
   height: 100vh;
   padding: 0 20px;
   background-color: rgba(0, 0, 0, .5);
-  z-index: 10;
   overflow: hidden;
+  z-index: 10;
 }
 
 .contact-container.active {
@@ -29,6 +29,14 @@
   animation: show-up .3s forwards;
 }
 
+.contact__form {
+  display: none;
+}
+
+.contact__form.active {
+  display: block;
+}
+
 .contact__close {
   position: absolute;
   right: 10px;
@@ -44,10 +52,11 @@
 }
 
 .contact__title {
-  color: #084154;
+  margin-bottom: 20px;
   font-size: 25px;
   font-weight: bold;
-  margin-bottom: 20px;
+  text-align: center;
+  color: #084154;
 }
 
 .contact__name-input,
@@ -73,4 +82,27 @@
   background-color: #084154;
   color: #fff;
   font-size: 18px;
+}
+
+.contact__success {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__success.active {
+  display: flex;
+  animation: show-up .3s forwards;
+}
+
+.contact__success-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contact__success-message {
+  font-size: 18px;
+  text-align: center;
+  color: #084154;
 }
