@@ -76,12 +76,13 @@
 /* ==== MOBILE ==== */
 @media only screen and (max-width: 850px) {
 
-  .modal-menu.active {
+  .modal-menu {
+    position: fixed;
     top: 0;
     left: -1px;
-    display: flex;
+    display: none;
     flex-direction: column;
-    width: 101vw;
+    width: 101%;
     height: 100vh;
     padding-top: 40px;
     border: none;
@@ -89,6 +90,10 @@
     overflow-y: scroll;
     overflow-x: hidden;
     z-index: -1;
+  }
+
+  .modal-menu.active {
+    display: flex;
   }
 
   .modal-menu::before {
