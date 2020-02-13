@@ -1,5 +1,8 @@
 # E-commerce N1 #
 
+### Demo ###
+Publiquei a API no Heroku e hospedei o frontend no GitHub Pages, para visualizar [clique aqui](https://jonathanpauluze.github.io/ecommercen1-frontend/)
+
 ### Necessário para rodar o projeto ###
 - [Git](https://git-scm.com/)
 - [NodeJS e NPM](https://nodejs.org/en/)
