@@ -1,0 +1,108 @@
+.contact-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, .5);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.contact-container.active {
+  display: flex;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 60px 20px 40px;
+  background-color: #fff;
+  animation: show-up .3s forwards;
+}
+
+.contact__form {
+  display: none;
+}
+
+.contact__form.active {
+  display: block;
+}
+
+.contact__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #F55959;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contact__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #084154;
+}
+
+.contact__name-input,
+.contact__email-input,
+.contact__message {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #084154;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.contact__name-input::placeholder,
+.contact__email-input::placeholder,
+.contact__message::placeholder {
+  color: rgba(8, 65, 84, .8);
+}
+
+.contact__btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #084154;
+  color: #fff;
+  font-size: 18px;
+}
+
+.contact__success {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__success.active {
+  display: flex;
+  animation: show-up .3s forwards;
+}
+
+.contact__success-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contact__success-message {
+  font-size: 18px;
+  text-align: center;
+  color: #084154;
+}

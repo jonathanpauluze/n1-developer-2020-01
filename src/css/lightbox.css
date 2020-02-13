@@ -1,0 +1,54 @@
+.lightbox-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.lightbox-container.active {
+  display: flex;
+}
+
+.lightbox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 400px;
+  padding: 0 20px;
+  background-color: #fff;
+  animation: show-up .3s forwards;
+}
+
+.lightbox__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: #F55959;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.lightbox__emoji {
+  font-size: 60px;
+}
+
+.lightbox__text {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 20px;
+}

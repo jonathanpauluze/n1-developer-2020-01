@@ -1,0 +1,49 @@
+.featured-games-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  width: 75%;
+  margin: -20px auto 0 auto;
+}
+
+.featured-game__card {
+  position: relative;
+}
+
+.featured-game__cover {
+  width: 100%;
+}
+
+.featured-game__btn {
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 25px solid #3EC6E0;
+  border-bottom: 25px solid #3EC6E0;
+  border-left: 25px solid transparent;
+  background-color: transparent;
+  outline: none;
+  z-index: 2;
+}
+
+.featured-game__btn::after {
+  content: '+';
+  position: absolute;
+  top: -5px;
+  left: 3px;
+  font-size: 25px;
+  color: #fff;
+}
+
+/* ==== MOBILE ==== */
+@media only screen and (max-width: 850px) {
+  .featured-games-container {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 20px;
+    width: 90%;
+  }
+}
