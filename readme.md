@@ -26,7 +26,7 @@ yarn dev
 Retorne na raiz do projeto, acesse a pasta `frontend` e inicie um servidor local
 ```
 cd ../frontend
-npx http-serve ./
+npx http-server ./
 ```
 
 Agora basta acessar a URL descrita no console.
