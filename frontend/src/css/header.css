@@ -1,17 +1,21 @@
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 75%;
-  padding-top: 20px;
-  z-index: 10;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 99999;
+}
+
+.header.scrolled {
+  background-color: rgba(0, 0, 0, .4);
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .navbar-brand {
@@ -116,7 +120,11 @@
 
   .header {
     width: 100%;
-    padding: 20px 20px 0;
+    padding: 20px;
+  }
+
+  .navbar {
+    width: 100%;
   }
 
   .navbar-nav .nav-item:not(:last-of-type)::after,
