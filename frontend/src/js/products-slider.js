@@ -32,7 +32,6 @@ export default function startProductSlides() {
       const buyBtns = document.querySelectorAll('.featured-product__btn');
       buyBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-          console.log('click')
           showLightbox(true);
           bagAmount++;
           bagAmount <= 99 ? bagAmountEl.innerText = bagAmount : bagAmountEl.innerText = '99+';
