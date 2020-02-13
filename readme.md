@@ -9,17 +9,17 @@
 Faça um clone do repositório
 ```
 git clone https://github.com/jonathanpauluze/n1-developer-2020-01.git n1
+cd n1
 ```
 
 Na raiz do projeto, acesse a pasta `backend` e instale as dependências
 ```
-cd n1
+cd backend
 yarn
 ```
 
 Em seguida, inicie o servidor backend local (o servidor fica na porta 3333)
 ```
-cd backend
 yarn dev
 ```
 
