@@ -1,6 +1,5 @@
 .slider-container {
   height: 100%;
-  position: relative;
 }
 
 .slider {
@@ -9,9 +8,11 @@
 }
 
 .slider-img {
+  position: relative;
   width: 100%;
   height: 650px;
   background-size: cover;
+  outline: none;
 }
 
 .img_1 {
@@ -69,6 +70,7 @@
   padding: 3px 10px;
   border: none;
   background-color: transparent;
+  outline: none;
   z-index: 5;
 }
 
@@ -79,10 +81,8 @@
 .game-info {
   max-width: 500px;
   position: absolute;
-  /* right: 160px; */
+  top: 33%;
   right: 13%;
-  top: 50%;
-  transform: translateY(-50%);
   color: #fff;
 }
 
@@ -180,9 +180,8 @@
     max-width: 100%;
     width: 100%;
     height: 200px;
-    top: 310px;
     right: 0;
-    left: 0;
+    top: 210px;
     padding: 20px;
     background-color: rgba(0, 0, 0, .5);
   }
