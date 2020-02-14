@@ -33,14 +33,11 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  width: 30px;
-  height: 30px;
   border: none;
-  border-radius: 50%;
-  background-color: #F55959;
+  background-color: transparent;
   color: #fff;
-  font-size: 20px;
   cursor: pointer;
+  outline: none;
 }
 
 .lightbox__emoji {
