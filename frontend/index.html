@@ -97,7 +97,7 @@
 
   <div class="contact-container">
     <div class="contact">
-      <button class="contact__close">x</button>
+      <button class="contact__close"><img src="./src/svgs/close_btn.svg" alt="Botão de fechar"></button>
       <form class="contact__form">
         <header class="contact__title">✍ Fale com a gente</header>
         <input class="contact__name-input" type="text" placeholder="Seu nome *" required />
@@ -114,18 +114,25 @@
 
   <div class="slider-container">
     <div class="slider">
-      <div class="slider-img img_1"></div>
-      <div class="slider-img img_2"></div>
+      <div class="slider-img img_1">
+        <div class="game-info">
+          <h1 class="game-title">Mortal Kombat</h1>
+          <p class="game-price">R$ 229<span class="game-cents">,90</span></p>
+          <p class="game-description">Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.</p>
+        </div>
+      </div>
+      <div class="slider-img img_2">
+        <div class="game-info">
+          <h1 class="game-title">Red Dead Redemption</h1>
+          <p class="game-price">R$ 249<span class="game-cents">,90</span></p>
+          <p class="game-description">Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.</p>
+        </div>
+      </div>
     </div>
     <div class="slide-info">
       <p class="slide-title">Mortal Kombat</p>
       <span class="slide-separator"></span>
-      <div class="slide-control">1/2</div>
-    </div>
-    <div class="game-info">
-      <h1 class="game-title">Mortal Kombat</h1>
-      <p class="game-price">R$ 229<span class="game-cents">,90</span></p>
-      <p class="game-description">Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget.</p>
+      <div class="slide-control">1 / 2</div>
     </div>
   </div>
 
@@ -143,13 +150,13 @@
   <section class="featured-products-container">
     <header class="featured-products__title">Produtos em destaque</header>
     <div class="featured-products__slider">
-      
+      <!-- produtos injetados via JavaScript -->
     </div>
   </section>
 
   <div class="lightbox-container">
     <div class="lightbox">
-      <button class="lightbox__close">x</button>
+      <button class="lightbox__close"><img src="./src/svgs/close_btn.svg" alt="Botão de fechar"></button>
       <p class="lightbox__emoji">✌</p>
       <p class="lightbox__text">Obrigado por comprar!</p>
     </div>
