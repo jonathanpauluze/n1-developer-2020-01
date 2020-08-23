@@ -1,4 +1,5 @@
 # E-commerce N1 #
+Projeto criado como desafio para posição de Desenvolvedor Front-End na [Agência N1](https://agencian1.com.br)
 
 ### Necessário para rodar o projeto ###
 - [Git](https://git-scm.com/)
