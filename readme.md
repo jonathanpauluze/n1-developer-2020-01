@@ -9,8 +9,8 @@ Projeto criado como desafio para posição de Desenvolvedor Front-End na [Agênc
 ### Como rodar o projeto ###
 Faça um clone do repositório
 ```
-git clone https://github.com/jonathanpauluze/n1-developer-2020-01.git n1
-cd n1
+git clone https://github.com/jonathanpauluze/ecommerce-n1
+cd ecommerce-n1
 ```
 
 Na raiz do projeto, acesse a pasta `backend` e instale as dependências
